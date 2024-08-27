@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Navigationbar */
+.navigationbar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    margin-left: 200px;
+    margin-top: 20px;
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    transition: 0.5s;
+
+}
+#icon:hover{
+    transform: rotate(20deg);
+
+}
+
+#text {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#text span {
+    color: rgba(0, 157, 255, 0.67);
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0 15px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgba(0, 157, 255, 0.67);
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: arial;
+}
+
+.navbar ul li a:hover {
+    color: rgb(17, 136, 191);
+    transform: translateY(-3%);
+}
+
+.navbar ul li a:active {
+    text-decoration: underline;
+}
+
+/* contact */
+.contact{
+    background-color: rgb(225, 248, 248);
+    margin-top: 10px;
+    padding: 30px;
+}
+ .contact h3{
+    font-weight: lighter;
+    color: rgb(17, 136, 191);
+    font-family: "Noto Sans", sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 45px;
+
+}
+.contact1{
+    display: flex;
+margin-top: 50px;
+margin-left: 200px;
+margin-right: 200px;
+}
+.contact img{
+    width:50%;
+}
+.contact1 .form{
+    margin-left: 15px;
+    width: 70%;
+}
+.form input{
+    margin: 10px ;
+    padding: 8px;
+    border: none;
+    margin-top: 0px;
+}
+.form textarea{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding: 8px;
+    border: none;
+    height: 272px;
+    width: 580px;
+}
+.form button{
+    cursor: pointer;
+    background:white;
+    padding: 8px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: arial;
+}
+.form button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+  
+  .google-map iframe {
+    height: 50%;
+    width: 84%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+
+  /* footer */
+  .footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 80px;
+  }
+ .footer1{
+    margin-left: 100px;
+ } 
+.footer1 h3{
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 20px;
+} 
+.footer p{
+    margin-top: 10px;
+    font-family: arial;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .bi{
+  margin-right: 8px;
+}
+.footer p:hover{
+    transform: translateY(-10%);
+}
+.get{
+    margin-left: 100px;
+}
+.get h3{
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.get p{
+    margin-top: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.get p:hover{
+    transform: scale(2);
+}
+.services{
+    margin-left: 200px;
+}
+.services h3{
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.services p{
+    margin-top: 10px;
+    font-family: arial;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.services p:hover{
+    transform: translateY(-10%);
+}
+/* gotopbtn */
+.gotoobtn{
+    width: 50px;
+    height: 50px;
+    position:fixed;
+    bottom: 50px;
+    right: 50px;
+    left: 1300px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+}
+.gotoobtn .bi{
+    font-size: 30px;
+    color: rgb(62, 134, 168);
+}
+
+.copyright {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
+}

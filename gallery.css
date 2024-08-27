@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Navigationbar */
+.navigationbar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    margin-left: 200px;
+    margin-top: 20px;
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+}
+
+#icon {
+    width: 50px;
+    cursor: pointer;
+    margin-bottom: 4px;
+transition: 0.5s;
+}
+#icon:hover{
+    transform: rotate(20deg);
+
+}
+
+#text {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#text span {
+    color: rgba(0, 157, 255, 0.67);
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0 15px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgba(0, 157, 255, 0.67);
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: arial;
+}
+
+.navbar ul li a:hover {
+    color: rgb(17, 136, 191);
+}
+
+.navbar ul li a:active {
+    text-decoration: underline;
+}
+/* carousel */
+.maindiv{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background-image: url(assets/owner2.jpg);
+    background-size:100% 100%;
+    animation: slider 10s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url('assets/owner2.jpg');}
+    25%{background-image: url('assets/owner5.jpeg');}
+    55%{background-image: url('assets/owner4.jpeg');}
+    80%{background-image: url('assets/owner6.png');}
+}
+/* gallery */
+.gallery{
+    margin-top: 600px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+.gallery-h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    color: rgb(15, 88, 121);
+}
+
+.parent{
+    width: 37%;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 157, 255, 0.67);
+}
+.child{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.bg-one{
+    background-image: url('assets/dog10.jpeg');
+}
+.bg-two{
+    background-image: url('assets/cat1.jpg');
+}
+.bg-three{
+    background-image: url('assets/dog4.jpg');
+}
+.bg-four{
+    background-image: url('assets/cat2.webp');
+}
+.bg-five{
+    background-image: url('assets/dog9.webp');
+}
+.bg-six{
+    background-image: url('assets/cat3.avif');
+}
+
+.parent:hover .child{
+    transform: scale(1.2);
+}
+
+
+/* footer */
+#footer {
+    display: flex;
+    margin-top: 200px;
+    background-color: rgb(225, 248, 248);
+    justify-content: center;
+    padding: 100px;
+}
+
+.contact {
+    margin-right: 50px;
+}
+
+.contact h3 {
+    color: rgb(62, 134, 168);
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+}
+
+.contact p {
+    margin-top: 20px;
+    margin-right: 10px;
+    font-family: arial;
+    color: rgb(84, 173, 214);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact p:hover {
+    color: rgb(62, 134, 168);
+    transform: translateY(-5%);
+}
+
+.contact .bi {
+    margin-right: 10px;
+}
+
+.get h3 {
+
+    color: rgb(62, 134, 168);
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+}
+
+.get p {
+    margin-top: 20px;
+    color: rgb(84, 173, 214);
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.get p:hover {
+    transform: scale(2);
+    color: rgb(62, 134, 168);
+
+}
+
+/* gotopbtn */
+.gotoobtn{
+    width: 50px;
+    height: 50px;
+    position:fixed;
+    bottom: 50px;
+    right: 50px;
+    left: 1300px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+}
+.gotoobtn .bi{
+    font-size: 30px;
+    color: rgb(62, 134, 168);
+}
+
+.copyright {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
